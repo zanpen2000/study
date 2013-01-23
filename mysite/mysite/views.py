@@ -1,3 +1,4 @@
+#coding:utf-8
 from django.http import HttpResponse, Http404
 import datetime
 
@@ -6,7 +7,7 @@ from django.template import Context
 
 
 def hello(request):
-    return HttpResponse("Hello world!")
+    return HttpResponse("жпнд".decode("gbk"))
 
 def current_datetime(request):
     now = datetime.datetime.now()
